@@ -1,29 +1,27 @@
-# This file is the main docker file configurations
+# Stage 1: Build the React app
+FROM node:18-alpine AS build
 
-# Official Node JS runtime as a parent image
-FROM node:10.16.0-alpine
-
-# Set the working directory to ./app
 WORKDIR /app
 
-# Install app dependencies
-# A wildcard is used to ensure both package.json AND package-lock.json are copied
-# where available (npm@5+)
-COPY package.json ./
+# Install dependencies
+COPY package.json package-lock.json* ./
+RUN npm ci
 
-RUN apk add --no-cache git
+# Copy source and build
+COPY . .
+RUN npm run build
 
-# Install any needed packages
-RUN npm install
+RUN npm audit fix --force
 
-# Audit fix npm packages
-RUN npm audit fix
+# Stage 2: Serve with nginx
+FROM nginx:alpine
 
-# Bundle app source
-COPY .. /app
+# Copy built assets from build stage
+COPY --from=build /app/build /usr/share/nginx/html
 
-# Make port 3000 available to the world outside this container
-EXPOSE 3000
+# Copy nginx config for SPA routing
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
-# Run app.js when the container launches
-CMD ["npm", "start"]
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]
