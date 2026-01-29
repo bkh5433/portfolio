@@ -12,7 +12,7 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="accent"> INTRODUCE </span> MYSELF
+              ALLOW ME TO <span className="accent"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
               I'm a software engineer and data engineer who builds tools that
@@ -28,7 +28,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              My flagship project is{" "}
+              My flagship project is{""}
               <b className="accent">Vista</b> — a full-stack analytics platform
               I built from scratch that serves 60+ properties with real-time
               operational intelligence, forecasting models, and automated
