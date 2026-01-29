@@ -8,20 +8,20 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi, I'm <span className="purple">Brandon Hightower</span> — a
+            Hi, I'm <span className="accent">Brandon Hightower</span> — a
             software engineer and data engineer based in the{" "}
-            <span className="purple">Greater Philadelphia</span> area.
+            <span className="accent">Greater Philadelphia</span> area.
             <br />
             <br />
             I build full-stack applications, automation tools, and data
             pipelines that solve real business problems. My flagship project,{" "}
-            <span className="purple">Vista</span>, is a Flask/React analytics
+            <span className="accent">Vista</span>, is a Flask/React analytics
             platform serving 60+ properties with real-time operational
             intelligence.
             <br />
             <br />
             I hold a B.S. in Information Sciences and Technology from{" "}
-            <span className="purple">Penn State</span> (2024).
+            <span className="accent">Penn State</span> (2024).
             <br />
             <br />
             What I bring to the table:
@@ -38,7 +38,7 @@ function AboutCard() {
             </li>
           </ul>
 
-          <p style={{ color: "rgb(155 126 172)" }}>
+          <p style={{ color: "rgb(126 155 182)" }}>
             "You miss 100% of the shots you don't take." (Wayne Gretzky){""}
           </p>
           <footer className="blockquote-footer">Michael Scott</footer>
