@@ -10,12 +10,27 @@ import {
   BrowserRouter as Router,
   Route,
   Routes,
-  Navigate
+  Navigate,
+  useLocation
 } from "react-router-dom";
+import { analytics, logEvent } from "./firebase";
 import ScrollToTop from "./components/ScrollToTop";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+function PageViewTracker() {
+  const location = useLocation();
+
+  useEffect(() => {
+    logEvent(analytics, "page_view", {
+      page_path: location.pathname,
+      page_title: document.title
+    });
+  }, [location]);
+
+  return null;
+}
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -30,6 +45,7 @@ function App() {
 
   return (
     <Router>
+      <PageViewTracker />
       <Preloader load={load} />
       <div className="App" id={load ? "no-scroll" : "scroll"}>
         <Navbar />

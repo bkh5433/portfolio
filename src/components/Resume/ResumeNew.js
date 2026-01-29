@@ -6,6 +6,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import pdf from "../../Assets/resume.pdf";
+import { analytics, logEvent } from "../../firebase";
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
@@ -15,6 +16,10 @@ function ResumeNew() {
   useEffect(() => {
     setWidth(window.innerWidth);
   }, []);
+
+  const handleDownload = () => {
+    logEvent(analytics, "file_download", { file_name: "resume.pdf" });
+  };
 
   return (
     <div>
@@ -26,6 +31,7 @@ function ResumeNew() {
             href={pdf}
             target="_blank"
             style={{ maxWidth: "250px" }}
+            onClick={handleDownload}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
@@ -44,6 +50,7 @@ function ResumeNew() {
             href={pdf}
             target="_blank"
             style={{ maxWidth: "250px" }}
+            onClick={handleDownload}
           >
             <AiOutlineDownload />
             &nbsp;Download CV
