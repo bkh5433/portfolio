@@ -8,6 +8,9 @@ import editor from "../../Assets/Projects/codeEditor.png";
 import chatify from "../../Assets/Projects/chatify.png";
 import suicide from "../../Assets/Projects/suicide.png";
 import bitsOfCode from "../../Assets/Projects/blog.png";
+import streaksaver from "../../Assets/Projects/streaksaverLogo.png";
+import cerebro from "../../Assets/Projects/cerebroLogo.png";
+import m365 from "../../Assets/Projects/M365_screenshot.png";
 
 function Projects() {
   return (
@@ -15,76 +18,48 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My Recent <strong className="purple">Works </strong>
+          My <strong className="purple">Works </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few projects I've worked on recently.
+          Here are a few projects I've worked on.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
-              isBlog={false}
-              title="Chatify"
-              description="Personal Chat Room or Workspace to share resources and hangout with friends build with react.js, Material-UI, and Firebase. Have features which allows user for realtime messaging, image sharing as well as supports reactions on messages."
-              ghLink="https://github.com/soumyajit4419/Chatify"
-              demoLink="https://chatify-49.web.app/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
-              imgPath={bitsOfCode}
-              isBlog={false}
-              title="Bits-0f-C0de"
-              description="My personal blog page build with Next.js and Tailwind Css which takes the content from makdown files and renders it using Next.js. Supports dark mode and easy to write blogs using markdown."
-              ghLink="https://github.com/soumyajit4419/Bits-0f-C0de"
-              demoLink="https://blogs.soumya-jit.tech/"
-            />
-          </Col>
-
-          <Col md={4} className="project-card">
-            <ProjectCard
               imgPath={editor}
               isBlog={false}
-              title="Editor.io"
-              description="Online code and markdown editor build with react.js. Online Editor which supports html, css, and js code with instant view of website. Online markdown editor for building README file which supports GFM, Custom Html tags with toolbar and instant preview.Both the editor supports auto save of work using Local Storage"
-              ghLink="https://github.com/soumyajit4419/Editor.io"
-              demoLink="https://editor.soumya-jit.tech/"              
+              title="Vista Analytics Platform"
+              description="Full-stack property analytics platform with Flask/FastAPI backend, React 18/TypeScript frontend using Radix UI, and SQL Server with connection pooling. Features a custom concurrent cache system with stale-if-error fallback, break-even forecasting with dynamic buffer calculations, JWT + Firebase authentication with RBAC, and automated multi-sheet Excel report generation using openpyxl. Serves 60+ properties and deployed with Docker."
+              ghLink="https://github.com/bkh5433/Vista"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={leaf}
+              imgPath={m365}
               isBlog={false}
-              title="Plant AI"
-              description="Used the plant disease dataset from Kaggle and trained a image classifer model using 'PyTorch' framework using CNN and Transfer Learning with 38 classes of various plant leaves. The model was successfully able to detect diseased and healthy leaves of 14 unique plants. I was able to achieve an accuracy of 98% by using Resnet34 pretrained model."
-              ghLink="https://github.com/soumyajit4419/Plant_AI"
-              demoLink="https://plant49-ai.herokuapp.com/"
+              title="M365 License Automation"
+              description="Flask web app that processes Azure-exported CSV license data using Pandas, generating multi-sheet Excel reports with cost analysis via OpenPyXL. Features user authentication, Docker deployment with Nginx, and reduced an hourly monthly process to 1 minute."
+              // ghLink="https://github.com/bkh5433/AIONLicenseScraper"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={suicide}
+              imgPath={streaksaver}
               isBlog={false}
-              title="Ai For Social Good"
-              description="Using 'Natural Launguage Processing' for the detection of suicide-related posts and user's suicide ideation in cyberspace  and thus helping in sucide prevention."
-              ghLink="https://github.com/soumyajit4419/AI_For_Social_Good"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              title="StreakSaver"
+              description="iOS reminder app built with Swift and UIKit (2017-2018), featuring UserNotifications for scheduled local alerts, CloudKit integration for personalized greetings, and CoreLocation with Mapbox for geofence-based reminders. Includes Firebase analytics and Crashlytics monitoring. Deployed on App Store with 3.3K+ users around the world."
+              demoLink="https://appadvice.com/app/streaksaver-snapstreak-helper/1291734147"
             />
           </Col>
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={emotion}
+              imgPath={cerebro}
               isBlog={false}
-              title="Face Recognition and Emotion Detection"
-              description="Trained a CNN classifier using 'FER-2013 dataset' with Keras and tensorflow backened. The classifier sucessfully predicted the various types of emotions of human. And the highest accuracy obtained with the model was 60.1%.
-              Then used Open-CV to detect the face in an image and then pass the face to the classifer to predict the emotion of a person."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              title="Cerebro"
+              description="Streamlit-based sabermetrics portal for Penn State Abington's D3 baseball team. Scrapes NCAA stats via BeautifulSoup4, calculates advanced metrics (wOBA, FIP, wRAA, wRC) using season-specific linear weights, and stores data in Firebase Firestore. Features AWS Cognito authentication, Pandas data pipelines, and Plotly visualizations."
             />
           </Col>
         </Row>

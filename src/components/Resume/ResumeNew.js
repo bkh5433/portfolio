@@ -2,11 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import pdf from "../../Assets/../Assets/Soumyajit_Behera.pdf";
 import { AiOutlineDownload } from "react-icons/ai";
-import { Document, Page, pdfjs } from "react-pdf";
-import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
+
+const resumeDownload = "https://drive.google.com/uc?export=download&id=1xRNnWd54sGtrVGrd2MOfcqkC-cJg-y68";
+const resumeEmbed = "https://drive.google.com/file/d/1xRNnWd54sGtrVGrd2MOfcqkC-cJg-y68/preview";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
@@ -22,7 +21,7 @@ function ResumeNew() {
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={resumeDownload}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
@@ -31,16 +30,21 @@ function ResumeNew() {
           </Button>
         </Row>
 
-        <Row className="resume">
-          <Document file={pdf} className="d-flex justify-content-center">
-            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
-          </Document>
+        <Row className="resume" style={{ justifyContent: "center", padding: "20px 0" }}>
+          <iframe
+            src={resumeEmbed}
+            width={width > 786 ? "800" : "360"}
+            height={width > 786 ? "1000" : "600"}
+            allow="autoplay"
+            title="Brandon Hightower Resume"
+            style={{ border: "none" }}
+          />
         </Row>
 
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Button
             variant="primary"
-            href={pdf}
+            href={resumeDownload}
             target="_blank"
             style={{ maxWidth: "250px" }}
           >

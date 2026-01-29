@@ -8,37 +8,40 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi everyone! I’m <span className="purple">Soumyajit Behera</span>{" "}
-            from <span className="purple">Bhubaneswar, India</span>.
-            <br />
-            I’m currently working as a{" "}
-            <span className="purple">Software Developer</span> at{" "}
-            <span className="purple">Juspay</span>.
-            <br />I hold an Integrated M.Sc. (IMSc) in{" "}
-            <span className="purple">Mathematics and Computing</span> from{" "}
-            <span className="purple">BIT Mesra</span>.
+            Hi, I'm <span className="purple">Brandon Hightower</span> — a
+            software engineer and data engineer based in the{" "}
+            <span className="purple">Greater Philadelphia</span> area.
             <br />
             <br />
-            Outside of coding, I love engaging in activities that keep me
-            creative and inspired:
+            I build full-stack applications, automation tools, and data
+            pipelines that solve real business problems. My flagship project,{" "}
+            <span className="purple">Vista</span>, is a Flask/React analytics
+            platform serving 60+ properties with real-time operational
+            intelligence.
+            <br />
+            <br />
+            I hold a B.S. in Information Sciences and Technology from{" "}
+            <span className="purple">Penn State</span> (2024).
+            <br />
+            <br />
+            What I bring to the table:
           </p>
-
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games 🎮
+              <ImPointRight /> Full-stack development with Python, Flask, React, and SQL
             </li>
             <li className="about-activity">
-              <ImPointRight /> Writing Tech Blogs ✍️
+              <ImPointRight /> Data engineering — ETL pipelines, analytics engines, forecasting models
             </li>
             <li className="about-activity">
-              <ImPointRight /> Traveling and Exploring New Places 🌍
+              <ImPointRight /> Cloud deployment and infrastructure (AWS, Azure)
             </li>
           </ul>
 
           <p style={{ color: "rgb(155 126 172)" }}>
-            "Strive to build things that make a difference!"{" "}
+            "You miss 100% of the shots you don't take." (Wayne Gretzky){""}
           </p>
-          <footer className="blockquote-footer">Soumyajit</footer>
+          <footer className="blockquote-footer">Michael Scott</footer>
         </blockquote>
       </Card.Body>
     </Card>

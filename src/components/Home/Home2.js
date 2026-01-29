@@ -2,6 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
+import Lottie from "lottie-react";
+import codingAnimation from "../../Assets/lottie/codingAnimation.json";
 
 function Home2() {
   return (
@@ -13,43 +15,59 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I’m a Software Engineer who loves transforming ideas into
-              reliable, scalable products. Over time, I’ve explored several
-              technologies and found my passion in building high-performance
-              systems and intuitive user experiences.
+              I'm a software engineer and data engineer who builds tools that
+              solve real business problems.
               <br />
               <br />
-              I’m proficient in
+              I'm proficient in
               <i>
                 <b className="purple">
                   {" "}
-                  JavaScript, C++, Rust, Node.js, and Java{" "}
+                  Python, Flask, FastAPI, SQL, JavaScript, React, and Node.js.{" "}
                 </b>
               </i>
-              — and I enjoy working across both backend and frontend stacks.
               <br />
               <br />
-              My key areas of interest include developing
+              My flagship project is{" "}
+              <b className="purple">Vista</b> — a full-stack analytics platform
+              I built from scratch that serves 60+ properties with real-time
+              operational intelligence, forecasting models, and automated
+              reporting.
+              <br />
+              <br />
+              I'm passionate about{" "}
+              <i>
+                <b className="purple">automation, data pipelines, </b>
+              </i>
+              and building{" "}
+              <i>
+                <b className="purple"> tools</b>
+              </i>{" "}
+              that eliminate manual work and drive better decisions.
+              <br />
+              <br />
+              I work daily with{" "}
               <i>
                 <b className="purple">
-                  {" "}
-                  Web Applications, Blockchain Solutions,{" "}
+                  AI-assisted development tools
                 </b>
-              </i>
-              and exploring new ways to bridge on-chain and off-chain systems.
+              </i>{" "}
+              like Cursor and Claude, and I build integrations using the{" "}
+              <b className="purple">Model Context Protocol (MCP)</b> to extend
+              AI capabilities into real workflows.
               <br />
               <br />
-              Whenever possible, I love building projects with
-              <b className="purple"> Node.js </b> and modern frameworks like{" "}
+              My toolkit includes{" "}
               <i>
-                <b className="purple">React.js</b> and{" "}
-                <b className="purple">Next.js</b>.
+                <b className="purple">
+                  PyCharm, DataGrip, Postman, and VS Code.
+                </b>
               </i>
             </p>
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <Lottie animationData={codingAnimation} loop={true} />
             </Tilt>
           </Col>
         </Row>
