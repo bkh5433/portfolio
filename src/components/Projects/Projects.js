@@ -10,6 +10,7 @@ import bitsOfCode from "../../Assets/Projects/blog.png";
 import streaksaver from "../../Assets/Projects/streaksaverLogo.png";
 import cerebro from "../../Assets/Projects/cerebroLogo.png";
 import m365 from "../../Assets/Projects/M365_screenshot.png";
+import comingSoon from "../../Assets/Projects/coming-soon.png";
 
 function Projects() {
   return (
@@ -25,11 +26,11 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={editor}
+              imgPath={comingSoon}
               isBlog={false}
               title="Vista Analytics Platform"
               description="Full-stack property analytics platform with Flask/FastAPI backend, React 18/TypeScript frontend using Radix UI, and SQL Server with connection pooling. Features a custom concurrent cache system with stale-if-error fallback, break-even forecasting with dynamic buffer calculations, JWT + Firebase authentication with RBAC, and automated multi-sheet Excel report generation using openpyxl. Serves 60+ properties and deployed with Docker."
-              ghLink="https://github.com/bkh5433/Vista"
+              // ghLink="https://github.com/bkh5433/Vista"
             />
           </Col>
 
@@ -49,7 +50,7 @@ function Projects() {
               isBlog={false}
               title="StreakSaver"
               description="iOS reminder app built with Swift and UIKit (2017-2018), featuring UserNotifications for scheduled local alerts, CloudKit integration for personalized greetings, and CoreLocation with Mapbox for geofence-based reminders. Includes Firebase analytics and Crashlytics monitoring. Deployed on App Store with 3.3K+ users around the world."
-              demoLink="https://appadvice.com/app/streaksaver-snapstreak-helper/1291734147"
+              // demoLink="https://appadvice.com/app/streaksaver-snapstreak-helper/1291734147"
             />
           </Col>
 

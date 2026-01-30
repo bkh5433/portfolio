@@ -28,7 +28,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              My flagship project is{""}
+              My flagship project is{" "}
               <b className="accent">Vista</b> — a full-stack analytics platform
               I built from scratch that serves 60+ properties with real-time
               operational intelligence, forecasting models, and automated
