@@ -15,8 +15,11 @@ function Home2() {
               ALLOW ME TO <span className="accent"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I'm a software engineer and data engineer who builds tools that
-              solve real business problems.
+              I'm <span className="accent">Brandon Hightower</span> — a {" "}
+              <span className="accent">software developer</span> and <span className="accent">data engineer</span> in the
+              {" "}
+              <span className="accent">Greater Philadelphia</span> area. I build
+              tools that solve real business problems.
               <br />
               <br />
               I'm proficient in
@@ -26,13 +29,6 @@ function Home2() {
                   Python, Flask, FastAPI, SQL, JavaScript, React, and Node.js.{" "}
                 </b>
               </i>
-              <br />
-              <br />
-              My flagship project is{" "}
-              <b className="accent">Vista</b> — a full-stack analytics platform
-              I built from scratch that serves 60+ properties with real-time
-              operational intelligence, forecasting models, and automated
-              reporting.
               <br />
               <br />
               I'm passionate about{" "}

@@ -8,11 +8,6 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hi, I'm <span className="accent">Brandon Hightower</span> — a
-            software engineer and data engineer based in the{" "}
-            <span className="accent">Greater Philadelphia</span> area.
-            <br />
-            <br />
             I build full-stack applications, automation tools, and data
             pipelines that solve real business problems. My flagship project,{" "}
             <span className="accent">Vista</span> is a Flask/React analytics
