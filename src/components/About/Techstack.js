@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { SiMicrosoftazure } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 import { FaHtml5, FaCss3Alt, FaUbuntu, FaNpm } from "react-icons/fa";
 import Javascript from "../../Assets/TechIcons/Javascript.svg";
 import Node from "../../Assets/TechIcons/Node.svg";
@@ -44,12 +45,16 @@ function Techstack() {
         <div className="tech-icons-text">CSS3</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMicrosoftazure fontSize={"24px"} />
+        <VscAzure fontSize={"24px"} />
         <div className="tech-icons-text">Azure</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={AWS} alt="AWS" className="tech-icon-images" />
         <div className="tech-icons-text">AWS</div>
+      </Col>
+        <Col xs={4} md={2} className="tech-icons">
+        <img src={Firebase} alt="firebase" />
+        <div className="tech-icons-text">Firebase</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <img src={Docker} alt="docker" />
@@ -62,10 +67,6 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <img src={Git} alt="git" />
         <div className="tech-icons-text">Git</div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <img src={Firebase} alt="firebase" />
-        <div className="tech-icons-text">Firebase</div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <FaNpm fontSize={"24px"} />

@@ -9,7 +9,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             I build full-stack applications, automation tools, and data
-            pipelines that solve real business problems. My flagship project,{" "}
+            pipelines. My flagship project,{" "}
             <span className="accent">Vista</span> is a Flask/React analytics
             platform serving 60+ properties with real-time operational
             intelligence.

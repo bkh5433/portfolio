@@ -46,11 +46,10 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={streaksaver}
+              imgPath={comingSoon}
               isBlog={false}
-              title="StreakSaver"
-              description="iOS reminder app built with Swift and UIKit (2017-2018), featuring UserNotifications for scheduled local alerts, CloudKit integration for personalized greetings, and CoreLocation with Mapbox for geofence-based reminders. Includes Firebase analytics and Crashlytics monitoring. Deployed on App Store with 3.3K+ users around the world."
-              // demoLink="https://appadvice.com/app/streaksaver-snapstreak-helper/1291734147"
+              title="Crypto Portfolio Tracker"
+              description="Full-stack crypto portfolio tracker with FastAPI backend and React/TypeScript frontend. Features Coinbase CSV ingestion with deduplication, FIFO-based ROI calculations, and live price updates via CoinGecko API. Built with SQLAlchemy (SQLite/Postgres), React Query, and deployed with Docker Compose and Nginx."
             />
           </Col>
 
@@ -60,6 +59,16 @@ function Projects() {
               isBlog={false}
               title="Cerebro"
               description="Streamlit-based sabermetrics portal for Penn State Abington's D3 baseball team. Scrapes NCAA stats via BeautifulSoup4, calculates advanced metrics (wOBA, FIP, wRAA, wRC) using season-specific linear weights, and stores data in Firebase Firestore. Features AWS Cognito authentication, Pandas data pipelines, and Plotly visualizations."
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={streaksaver}
+              isBlog={false}
+              title="StreakSaver"
+              description="iOS reminder app built with Swift and UIKit (2017-2018), featuring UserNotifications for scheduled local alerts, CloudKit integration for personalized greetings, and CoreLocation with Mapbox for geofence-based reminders. Includes Firebase analytics and Crashlytics monitoring. Deployed on App Store with 3.3K+ users around the world."
+              // demoLink="https://appadvice.com/app/streaksaver-snapstreak-helper/1291734147"
             />
           </Col>
         </Row>
