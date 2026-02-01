@@ -40,7 +40,7 @@ function Projects() {
               isBlog={false}
               title="M365 License Automation"
               description="Flask web app that processes Azure-exported CSV license data using Pandas, generating multi-sheet Excel reports with cost analysis via OpenPyXL. Features user authentication, Docker deployment with Nginx, and reduced an hourly monthly process to 1 minute."
-              // ghLink="https://github.com/bkh5433/AIONLicenseScraper"
+              // ghLink="https://github.com/bkh5433/M365LicenseAutomation"
             />
           </Col>
 
