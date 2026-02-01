@@ -29,7 +29,7 @@ function Projects() {
               imgPath={comingSoon}
               isBlog={false}
               title="Vista Analytics Platform"
-              description="Full-stack property analytics platform with Flask/FastAPI backend, React 18/TypeScript frontend using Radix UI, and SQL Server with connection pooling. Features a custom concurrent cache system with stale-if-error fallback, break-even forecasting with dynamic buffer calculations, JWT + Firebase authentication with RBAC, and automated multi-sheet Excel report generation using openpyxl. Serves 60+ properties and deployed with Docker."
+              description="Full-stack property analytics platform with Flask/FastAPI backend, React 18/TypeScript frontend using Radix UI, and SQL Server with connection pooling. Features a custom concurrent cache system with stale-if-error fallback, break-even forecasting with dynamic buffer calculations, JWT + Firebase authentication with RBAC, and automated multi-sheet Excel report generation using openpyxl. Serves 60+ properties and deployed with Docker. Reduced manual report generation from 30 minutes per report to 1 second."
               // ghLink="https://github.com/bkh5433/Vista"
             />
           </Col>
@@ -50,6 +50,7 @@ function Projects() {
               isBlog={false}
               title="Crypto Portfolio Tracker"
               description="Full-stack crypto portfolio tracker with FastAPI backend and React/TypeScript frontend. Features Coinbase CSV ingestion with deduplication, FIFO-based ROI calculations, and live price updates via CoinGecko API. Built with SQLAlchemy (SQLite/Postgres), React Query, and deployed with Docker Compose and Nginx."
+                // ghLink="https://github.com/bkh5433/crypto-tracker"
             />
           </Col>
 
