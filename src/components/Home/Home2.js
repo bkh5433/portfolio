@@ -15,45 +15,37 @@ function Home2() {
               ALLOW ME TO <span className="accent"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I'm <span className="accent">Brandon Hightower</span> — a {" "}
-              <span className="accent">software developer</span> and <span className="accent">data engineer</span> in the
-              {" "}
-              <span className="accent">Greater Philadelphia</span> area. I build
-              tools that solve real business problems.
+              I'm <span className="accent">Brandon Hightower</span>, a{" "}
+              <span className="accent">software developer</span> and{" "}
+              <span className="accent">data engineer</span> based in the{" "}
+              <span className="accent">Greater Philadelphia</span> area, focused
+              on building tools that solve real business problems.
               <br />
               <br />
-              I'm proficient in
+              My technical strengths include{" "}
               <i>
                 <b className="accent">
-                  {" "}
-                  Python, Flask, FastAPI, SQL, JavaScript, React, and Node.js.{" "}
+                  Python, Flask, FastAPI, SQL, JavaScript, React, and Node.js.
                 </b>
               </i>
               <br />
               <br />
-              I'm passionate about{" "}
-              <i>
-                <b className="accent">automation, data pipelines, </b>
-              </i>
-              and building{" "}
-              <i>
-                <b className="accent"> tools</b>
-              </i>{" "}
-              that eliminate manual work and drive better decisions.
+              <span className="accent">Automation</span> and{" "}
+              <span className="accent">data pipelines</span> are where I focus
+              most—creating tools that eliminate manual effort and support
+              better decision-making.
               <br />
               <br />
-              I work daily with{" "}
+              Day-to-day, I work with{" "}
               <i>
-                <b className="accent">
-                  AI-assisted development tools
-                </b>
+                <b className="accent">AI-assisted development tools</b>
               </i>{" "}
-              like Cursor and Claude, and I build integrations using the{" "}
+              like Cursor and Claude, and build integrations using the{" "}
               <b className="accent">Model Context Protocol (MCP)</b> to extend
               AI capabilities into real workflows.
               <br />
               <br />
-              My toolkit includes{" "}
+              My core development toolkit includes{" "}
               <i>
                 <b className="accent">
                   PyCharm, DataGrip, Postman, and VS Code.
