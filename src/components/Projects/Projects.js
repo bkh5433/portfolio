@@ -3,13 +3,11 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import leaf from "../../Assets/Projects/leaf.png";
-import emotion from "../../Assets/Projects/emotion.png";
-import editor from "../../Assets/Projects/codeEditor.png";
-import chatify from "../../Assets/Projects/chatify.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
 import streaksaver from "../../Assets/Projects/streaksaverLogo.png";
 import cerebro from "../../Assets/Projects/cerebroLogo.png";
 import m365 from "../../Assets/Projects/M365_screenshot.png";
+import crypto from "../../Assets/Projects/bitcoin-btc-logo.png";
+import vista3 from "../../Assets/Projects/vista-logo-light.png";
 import comingSoon from "../../Assets/Projects/coming-soon.png";
 
 function Projects() {
@@ -26,10 +24,10 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={comingSoon}
+              imgPath={vista3}
               isBlog={false}
               title="Vista Analytics Platform"
-              description="Full-stack property analytics platform with Flask/FastAPI backend, React 18/TypeScript frontend using Radix UI, and SQL Server with connection pooling. Features a custom concurrent cache system with stale-if-error fallback, break-even forecasting with dynamic buffer calculations, JWT + Firebase authentication with RBAC, and automated multi-sheet Excel report generation using openpyxl. Serves 60+ properties and deployed with Docker. Reduced manual report generation from 30 minutes per report to 1 second."
+              description="Full-stack property analytics platform with Flask/FastAPI backend, React 18/TypeScript frontend using Radix UI, and SQL Server with connection pooling. Features a custom concurrent cache system with stale-if-error fallback, break-even forecasting with dynamic buffer calculations, SSO authentication with RBAC, and automated multi-sheet Excel report generation using openpyxl. Serves 60+ properties and deployed with Docker. Reduced manual report generation from 30 minutes per report to 1 second."
               // ghLink="https://github.com/bkh5433/Vista"
             />
           </Col>
@@ -46,7 +44,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={comingSoon}
+              imgPath={crypto}
               isBlog={false}
               title="Crypto Portfolio Tracker"
               description="Full-stack crypto portfolio tracker with FastAPI backend and React/TypeScript frontend. Features Coinbase CSV ingestion with deduplication, FIFO-based ROI calculations, and live price updates via CoinGecko API. Built with SQLAlchemy (SQLite/Postgres), React Query, and deployed with Docker Compose and Nginx."
