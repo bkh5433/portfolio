@@ -13,6 +13,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { analytics, logEvent } from "../../firebase";
 
 function Home() {
   return (
@@ -61,6 +62,7 @@ function Home() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  onClick={() => logEvent(analytics, 'social_click', { platform: 'github', location: 'home' })}
                 >
                   <AiFillGithub />
                 </a>
@@ -71,6 +73,7 @@ function Home() {
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
+                  onClick={() => logEvent(analytics, 'social_click', { platform: 'linkedin', location: 'home' })}
                 >
                   <FaLinkedinIn />
                 </a>

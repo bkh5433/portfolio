@@ -6,6 +6,7 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { analytics, logEvent } from "../firebase";
 
 function Footer() {
   let date = new Date();
@@ -25,8 +26,9 @@ function Footer() {
               <a
                 href="https://github.com/bkh5433"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => logEvent(analytics, 'social_click', { platform: 'github', location: 'footer' })}
               >
                 <AiFillGithub />
               </a>
@@ -35,8 +37,9 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/brandonahightower/"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => logEvent(analytics, 'social_click', { platform: 'linkedin', location: 'footer' })}
               >
                 <FaLinkedinIn />
               </a>
